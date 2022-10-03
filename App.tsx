@@ -1,40 +1,25 @@
 import React from 'react';
 import {
-  SafeAreaView,
-  StyleSheet,
-  StatusBar,
-  View,
+    SafeAreaView,
+    StyleSheet,
+    StatusBar,
+    View
 } from 'react-native';
-
+import Calendar from './src/components/Calendar';
 
 const App = () => {
-  return (
-    <SafeAreaView style={{flex: 1}}>
-      <StatusBar barStyle={"dark-content"}/>
-      <View style={styles.container}>
-        <View style={styles.view1} />
-        <View style={styles.view1} />
-        <View style={styles.view1} />
-      </View>
-    </SafeAreaView>
-  );
+    return (
+        <SafeAreaView style={{flex: 1}}>
+            <StatusBar barStyle={'dark-content'} />
+            <Calendar />
+        </SafeAreaView>
+    );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    paddingVertical: 10,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column'
-  },
-  view1: {
-    margin: 10,
-    width: '30%',
-    height: 22,
-    borderRadius: 8,
-    backgroundColor: "red"
-  }
+    container: {
+
+    }
 });
 
 export default App;
